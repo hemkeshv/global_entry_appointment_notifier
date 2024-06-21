@@ -1,5 +1,23 @@
 # global_entry_appointment_notifier
 
+This app will simply parse json output from the interview scheduler for many of CBP's Trusted Traveler Programs, including Global Entry, NEXUS, SENTRI, US/Mexico FAST, and US/Canada FAST. You don't need to provide a login, it will simply check the available dates against your current interview date, then notify you if a better date can be locked in on Telegram.
+
+Based on the goes-notify that originally utilized Python2:
+[https://github.com/davidofwatkins/ge-cancellation-checker](https://github.com/Drewster727/goes-notify)
+
+# Getting started
+
+- Clone the repo
+- Set required field `chat_id` (User ID) and `api_key` of your telegram bot from this [tutorial] (https://hackernoon.com/from-python-to-telegram-build-your-own-notification-system)
+- Look up your enrollment center in the list below and fill it in `enrollment_location_id`
+- Enter your current interview date in Month name-Day-Year format. E.g., "September 20, 2024" in `current_interview_date_str`
+
+# Usage
+
+Run the script with `python`: `python3 .\global_entry_notification.py`
+
+If you would like to check multiple nearby locations at once you need to make copies the original file you just edited and change the location code on each file. Then in seperate windows run each copy of the diffrent locations.
+
 # GOES center codes
 
 The table below may not be complete. If you don't see your location, visit [this link](https://ttp.cbp.dhs.gov/schedulerapi/locations/?temporary=false&inviteOnly=false&operational=true&serviceName=Global%20Entry) for a current complete list; find your desired location; and use the 'id' field as the location code in your config file:
