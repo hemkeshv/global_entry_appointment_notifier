@@ -9,7 +9,7 @@ Based on the goes-notify that originally utilized Python2:
 
 - Clone the repo
 - Set required field `chat_id` (User ID) and `api_key` of your telegram bot from this [tutorial] (https://hackernoon.com/from-python-to-telegram-build-your-own-notification-system)
-- Look up your enrollment center in the list below and fill it in `enrollment_location_id`
+- Look up your enrollment center in the list below E.g., "5446" and fill it in `enrollment_location_id`
 - Enter your current interview date in Month name-Day-Year format. E.g., "September 20, 2024" in `current_interview_date_str`
 
 # Usage
