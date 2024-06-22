@@ -3,12 +3,12 @@
 This app will simply parse json output from the interview scheduler for many of CBP's Trusted Traveler Programs, including Global Entry, NEXUS, SENTRI, US/Mexico FAST, and US/Canada FAST. You don't need to provide a login, it will simply check the available dates against your current interview date, then notify you if a better date can be locked in on Telegram.
 
 Based on the goes-notify that originally utilized Python2:
-[https://github.com/davidofwatkins/ge-cancellation-checker](https://github.com/Drewster727/goes-notify)
+[goes-notify](https://github.com/Drewster727/goes-notify)
 
 # Getting started
 
 - Clone the repo
-- Set required field `chat_id` (User ID) and `api_key` of your telegram bot from this [tutorial] (https://hackernoon.com/from-python-to-telegram-build-your-own-notification-system)
+- Set required field `chat_id` (User ID) and `api_key` of your telegram bot from this [tutorial](https://hackernoon.com/from-python-to-telegram-build-your-own-notification-system)
 - Look up your enrollment center in the list below E.g., "5446" and fill it in `enrollment_location_id`
 - Enter your current interview date in Month name-Day-Year format. E.g., "September 20, 2024" in `current_interview_date_str`
 
